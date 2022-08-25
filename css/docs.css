@@ -1,0 +1,218 @@
+.sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #333566;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 20%;
+    height: 4550px;
+    text-align: center;
+    -webkit-animation: sidebar 2s ease;
+            animation: sidebar 2s ease;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 400;
+    padding: 10%;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.sidebar a:hover {
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background-color: #222445;
+}
+
+.main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 10%;
+    left: 21%;
+    width: 70%;
+    height: auto;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-animation: main 2s ease;
+            animation: main 2s ease;
+}
+
+.main h1 {
+    font-weight: 700;
+    -webkit-transform: scale(2);
+        -ms-transform: scale(2);
+            transform: scale(2);
+    width: 60%;
+    margin-left: 20%;
+}
+
+hr {
+    color: black;
+}
+
+.main img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ----------------------------------FOOTER----------------------------------- */
+
+footer {
+    background-color: #030430;
+    position: absolute;
+    bottom: -4000px;
+    width: 100%;
+}
+
+footer p {
+    margin-left: 1%;
+}
+
+/* --------------------------------------------------------------------------- */
+
+@-webkit-keyframes main {
+    0% {
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        opacity: 0;
+    }
+
+    50% {
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        opacity: 1;
+    }
+}
+
+@keyframes main {
+    0% {
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        opacity: 0;
+    }
+
+    50% {
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes sidebar {
+    0% {
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        opacity: 1;
+    }
+}
+
+@keyframes sidebar {
+    0% {
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .sidebar {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .main {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center;
+        margin-top: 85%;
+    }
+
+    footer {
+        bottom: -2146px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .main h1, .main h2, .main h3 {
+        -webkit-transform: scale(0.8);
+            -ms-transform: scale(0.8);
+                transform: scale(0.8);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .main h1, .main h2, .main h3 {
+        -webkit-transform: scale(0.6);
+            -ms-transform: scale(0.6);
+                transform: scale(0.6);
+    }
+}

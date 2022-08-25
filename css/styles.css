@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+body {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    background-color: #181F39;
+    width: auto;
+    height: auto;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/* ----------------------------- TOPBAR + NAVBAR ----------------------------- */
+
+.topbar {
+    background-color: #6E0FCB;
+    padding: 1%;
+}
+
+.navbar a {
+    margin: 1%;
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 400;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.topbar-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    top: 1%;
+    right: 1%;
+}
+
+.navbar-social img {
+    width: 30px;
+    height: auto;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.navbar a:hover {
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #fff;
+}
+
+.navbar-social img:hover {
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    opacity: 0.8;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* ----------------------------------FOOTER----------------------------------- */
+
+footer {
+    background-color: #030430;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin-left: 1%;
+}
+
+/* --------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 700px) {
+    .navbar-social img {
+        width: 20px;
+        height: auto;
+    }
+}
