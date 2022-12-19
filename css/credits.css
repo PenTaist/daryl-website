@@ -1,281 +1,63 @@
-.main {
+.container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    width: 100;
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-}
-
-.main a {
-    text-decoration: none;
-    color: #3d43f5;
-}
-
-.credits-discord {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 1%;
-    width: 33%;
-    height: auto;
-    margin-top: 10%;
-    -webkit-animation: discord 3s ease;
-            animation: discord 3s ease;
-}
-
-.credits-github {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 1%;
-    width: 33%;
-    height: auto;
-    margin-top: 10%;
-    -webkit-animation: github 2s ease;
-            animation: github 2s ease;
-}
-
-.credits-paypal {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 1%;
-    width: 33%;
-    height: auto;
-    margin-top: 10%;
-    -webkit-animation: paypal 2s ease;
-            animation: paypal 2s ease;
-}
-
-.credits-discord img {
-    width: 50%;
-    height: auto;
-}
-
-.credits-github img {
-    width: 60%;
-    height: auto;
-}
-
-.credits-paypal img {
-    width: 60%;
-    height: auto;
-}
-
-.credits-github a, .credits-paypal a {
     margin-top: 5%;
-    -webkit-transform: scale(2);
-        -ms-transform: scale(2);
-            transform: scale(2);
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
 }
 
-.main a:hover {
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-    color: blue;
-    text-decoration: underline;
+.container .pentaist_pdp {
+    border-radius: 50%;
 }
 
-@-webkit-keyframes discord {
+.container .social {
+    margin-top: 10%;
+}
+
+.container .social img {
+    width: 50px;
+    height: 50px;
+    margin: 0 2%;
+}
+
+.container .social img:hover {
+    opacity: 0.5;
+}
+
+.container h3  {
+    -webkit-animation: rainbow 1s infinite;
+            animation: rainbow 1s infinite;
+}
+
+@-webkit-keyframes rainbow {
     0% {
-        -webkit-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-        opacity: 0;
-    }
-
-    100% {
-        -webkit-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-        opacity: 1;
-    }
-}
-
-@keyframes discord {
-    0% {
-        -webkit-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-        opacity: 0;
-    }
-
-    100% {
-        -webkit-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes github {
-    0% {
-        -webkit-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-        opacity: 0;
+        color: #02A4FF;
     }
 
     50% {
-        -webkit-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-        opacity: 0;
+        color: #00FFA6;
     }
 
     100% {
-        -webkit-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-        opacity: 1;
+        color: #02A4FF;
     }
 }
 
-@keyframes github {
+@keyframes rainbow {
     0% {
-        -webkit-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-        opacity: 0;
+        color: #02A4FF;
     }
 
     50% {
-        -webkit-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-        opacity: 0;
+        color: #00FFA6;
     }
 
     100% {
-        -webkit-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes paypal {
-    0% {
-        -webkit-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-        opacity: 0;
-    }
-
-    50% {
-        -webkit-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-        opacity: 0;
-    }
-
-    80% {
-        -webkit-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-        opacity: 0;
-    }
-
-    100% {
-        -webkit-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-        opacity: 1;
-    }
-}
-
-@keyframes paypal {
-    0% {
-        -webkit-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-        opacity: 0;
-    }
-
-    50% {
-        -webkit-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-        opacity: 0;
-    }
-
-    80% {
-        -webkit-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-        opacity: 0;
-    }
-
-    100% {
-        -webkit-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-        opacity: 1;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    .main {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-    }
-
-    footer {
-        bottom: -200px;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .main a {
-        -webkit-transform: scale(0.9);
-            -ms-transform: scale(0.9);
-                transform: scale(0.9);
-    }
-
-    .main h1 {
-        -webkit-transform: scale(0.5);
-            -ms-transform: scale(0.5);
-                transform: scale(0.5);
+        color: #02A4FF;
     }
 }
