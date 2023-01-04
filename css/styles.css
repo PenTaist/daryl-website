@@ -40,10 +40,11 @@ p, span {
 }
 
 .topbar .logo {
-    width: 20%;
+    width: 150px;
+    height: 150px;
     position: absolute;
-    left: 0;
-    top: -4%;
+    left: 1%;
+    top: 1%;
 }
 
 .topbar .social {
@@ -94,40 +95,24 @@ p, span {
 }
 
 @media only screen and (max-width: 1230px) {
-    .topbar .logo {
-        top: -3%;
-    }
-
     .topbar .social img {
         width: 40%;
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    .topbar .logo {
-        width: 25%;
-    }
-
     .topbar .social img {
         width: 50%;
     }
 }
 
 @media only screen and (max-width: 780px) {
-    .topbar .logo {
-        width: 30%;
-    }
-
     .topbar .social img {
         width: 60%;
     }
 }
 
 @media only screen and (max-width: 580px) {
-    .topbar .logo {
-        width: 40%;
-    }
-
     .topbar .social img {
         width: 70%;
         right: 20%;
@@ -150,23 +135,19 @@ p, span {
         margin: 5% 0;
         margin-left: 60%;
     }
+
+    .topbar .logo {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 470px) {
-    .topbar .logo {
-        width: 50%;
-    }
-
     .topbar .social img {
         width: 80%;
     }
 }
 
 @media only screen and (max-width: 320px) {
-    .topbar .logo {
-        width: 60%;
-    }
-
     .topbar .social img {
         width: 90%;
     }

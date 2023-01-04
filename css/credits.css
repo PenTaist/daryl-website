@@ -9,10 +9,14 @@
             justify-content: center;
     text-align: center;
     margin-top: 5%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
-.container .pentaist_pdp {
+.container .pdp {
     border-radius: 50%;
+    width: 128px;
+    height: 128px;
 }
 
 .container .social {
@@ -27,6 +31,10 @@
 
 .container .social img:hover {
     opacity: 0.5;
+}
+
+.container .social p {
+    font-weight: 500;
 }
 
 .container h3  {
