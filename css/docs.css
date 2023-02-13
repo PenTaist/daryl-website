@@ -10,8 +10,8 @@
     background-color: #000918;
     width: 20%;
     position: absolute;
-    top: 20%;
-    bottom: -500%;
+    top: 30%;
+    bottom: -950%;
 }
 
 .sidebar a {
@@ -27,7 +27,9 @@
 }
 
 .sidebar a:first-child {
-    margin-top: 38%;
+    margin-top: 42%;
+    width: 110.8%;
+    background-color: #000918;
 }
 
 .sidebar a:hover {
@@ -62,6 +64,7 @@
 
     .sidebar a:first-child {
         margin-top: 0;
+        width: 100%;
     }
 
     .sidebar a:hover {
