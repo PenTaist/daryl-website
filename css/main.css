@@ -1,0 +1,39 @@
+main {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 40vh;
+}
+
+@keyframes anim-h1-main {
+    0% {
+        color: #02a4ff;
+        transform: scale(1.5);
+    }
+
+    50% {
+        color: #00ffa6;
+        transform: scale(1.6);
+    }
+
+    100% {
+        color: #02a4ff;
+        transform: scale(1.5);
+    }
+}
+
+main h1 {
+    animation: anim-h1-main 1s infinite;
+}
+
+@media only screen and (max-width: 620px) {
+    main h1 {
+        font-size: 3vh;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    main h1 {
+        font-size: 2vh;
+    }
+}
